@@ -67,7 +67,7 @@ router.post('/register', async (req, res) => {
                 const newUser = {
                     firstname: firstname.trim(),
                     lastname: lastname.trim(),
-                    email: email.trim(),
+                    email: email.toLowerCase().trim(),
                     phone: phone.trim(),
                     country: country.trim(),
                     password: password.trim(),
